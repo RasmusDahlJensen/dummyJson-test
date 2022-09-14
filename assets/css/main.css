@@ -83,8 +83,8 @@
   align-items: center;
   flex-direction: column;
   gap: 10%;
-  -webkit-animation: 1s ease-out 0s 1 slideBottom, 5s fadeIn;
-          animation: 1s ease-out 0s 1 slideBottom, 5s fadeIn;
+  -webkit-animation: 1s slideBottom, 1s fadeIn;
+          animation: 1s slideBottom, 1s fadeIn;
 }
 
 .bgImage {
