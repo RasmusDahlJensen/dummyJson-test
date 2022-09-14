@@ -1,0 +1,46 @@
+@use "typography" as f;
+
+
+.navLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 0% 0% 2%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 50px;
+
+        h1{
+         margin: 0;
+         font-family: f.$headerFont;
+         font-weight: 100;
+        }
+        nav{
+            ul{
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 150px;
+                    height: 100%;
+                    list-style: none;
+                    border-left: 1px solid black;
+                        a{
+                         font-weight: 200;
+                         text-decoration: none;
+                         color: black;   
+                        }
+                }
+            }
+        }
+}

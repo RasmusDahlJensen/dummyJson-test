@@ -1,0 +1,61 @@
+@use "typography" as f;
+@use "animations";
+
+
+
+.bgImageContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    animation: 1s ease-out 0s 1 slideBottom, 5s fadeIn;;
+
+}
+
+.bgImage{
+    background-image: url("/assets/img/laptop.jpg");
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+
+        h2{
+            margin: 0;
+            color: black;
+            font-size: 70px;
+            font-weight: 200;
+            width: 50%;
+        }
+}
+
+.bgButton{
+    background-color: white;
+    border: 1px solid black;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .btnText{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: f.$regFont;
+            font-weight: 100;
+            border-right: 1px solid black;
+        }
+        .btnArrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 30%;
+        }
+        img{
+            height: 50px;
+        }
+}
