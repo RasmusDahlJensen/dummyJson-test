@@ -28,19 +28,92 @@
                 align-items: center;
                 height: 100%;
                 li{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     width: 150px;
                     height: 100%;
                     list-style: none;
-                    border-left: 1px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: f.$regFont;
+                    font-weight: 200;
+                        li:hover{
+                            background-color: #0000005f;
+                        }
+
                         a{
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
                          font-weight: 200;
                          text-decoration: none;
-                         color: black;   
+                         color: black;
+                         width: 100%;
+                         height: 100%;
                         }
                 }
             }
         }
 }
+
+
+//Downdrop
+
+.dropdown, .dropdownTwo {
+    position: relative;
+    display: inline-block;
+    border-left: 1px solid black;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .dropdown-content, .dropdown-content-two {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -1px;
+    border: 1px solid black;
+    border-top: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: f.$regFont;
+            font-size: 20px;
+            border-top: 1px solid black;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: #0000005f;
+        }
+        li{
+            height: 100%;
+            width: 100%;
+        }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    animation: 0.5s fadeIn;
+
+  }
+  .dropdownTwo:hover .dropdown-content-two {
+    display: flex;
+    animation: 0.5s fadeIn;
+
+  }
+
+  .dropdown:hover,.dropdownTwo:hover{
+    background-color: #0000005f;
+  }
+  

@@ -20,7 +20,7 @@
     height: 90vh;
     background-position: center;
     background-size: cover;
-
+    box-shadow: 0 5px 10px rgba(106, 106, 106, 0.4);
         h2{
             margin: 0;
             color: black;
@@ -47,6 +47,7 @@
             font-family: f.$regFont;
             font-weight: 100;
             border-right: 1px solid black;
+            font-size: 20px;
         }
         .btnArrow{
             display: flex;
