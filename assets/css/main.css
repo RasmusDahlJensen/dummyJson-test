@@ -143,22 +143,16 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fadeOut {
-  100% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
+.fadeIn {
+  -webkit-animation: 0.5s fadeIn;
+          animation: 0.5s fadeIn;
 }
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
+
+.slideUp {
+  -webkit-animation: 0.5s slideBottom;
+          animation: 0.5s slideBottom;
 }
+
 .bgImageContent {
   height: 100%;
   width: 100%;
@@ -215,6 +209,13 @@
 }
 .bgButton img {
   height: 50px;
+}
+
+.mainContainer {
+  margin-top: 500px;
+}
+.mainContainer img {
+  width: 500px;
 }
 
 p, a {

@@ -1,6 +1,7 @@
 @use "typography" as f;
 @use "navbar";
 @use "bgimage";
+@use "mainContent";
 
 p, a{
     font-family: f.$regFont;
