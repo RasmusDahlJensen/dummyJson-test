@@ -18,11 +18,11 @@
         }
   }
 
-  @keyframes fadeOut {
-    100% {
-         opacity: 0; 
-        }
-    0% {
-         opacity: 1; 
-        }
-  }
+
+.fadeIn{
+  animation: 0.5s fadeIn;
+}
+
+.slideUp{
+  animation: 0.5s slideBottom;
+}
