@@ -17,6 +17,7 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     height: 50px;
+    z-index: 1;
 
         h1{
          margin: 0;
@@ -97,7 +98,7 @@
             color: black;
         }
         a:hover{
-            background-color: #0000005f;
+            background-color: #00000025;
         }
         li{
             height: 100%;
@@ -117,6 +118,6 @@
   }
 
   .dropdown:hover,.dropdownTwo:hover{
-    background-color: #0000005f;
+    background-color: #00000025;
   }
   

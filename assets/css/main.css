@@ -18,6 +18,7 @@
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   height: 50px;
+  z-index: 1;
 }
 .navbar h1 {
   margin: 0;
@@ -91,7 +92,7 @@
   color: black;
 }
 .dropdown-content a:hover, .dropdown-content-two a:hover {
-  background-color: rgba(0, 0, 0, 0.3725490196);
+  background-color: rgba(0, 0, 0, 0.1450980392);
 }
 .dropdown-content li, .dropdown-content-two li {
   height: 100%;
@@ -111,7 +112,7 @@
 }
 
 .dropdown:hover, .dropdownTwo:hover {
-  background-color: rgba(0, 0, 0, 0.3725490196);
+  background-color: rgba(0, 0, 0, 0.1450980392);
 }
 
 @-webkit-keyframes slideBottom {
@@ -322,6 +323,10 @@
 
 footer {
   margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2117647059);
 }
 footer ul li {
   list-style: none;
@@ -329,6 +334,62 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: black;
+}
+
+.footerSoMe {
+  display: flex;
+}
+.footerSoMe img:hover {
+  transition: 200ms;
+  scale: 130%;
+}
+.footerSoMe figure {
+  margin: 0 0 0 5%;
+}
+.footerSoMe img {
+  width: 30px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 60%;
+}
+.footerLinks h2 {
+  font-size: 25px;
+  font-weight: 200;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2078431373);
+}
+.footerLinks li {
+  margin-top: 10%;
+}
+
+li:hover {
+  transition: 100ms;
+  scale: 103%;
+}
+
+li:hover > a {
+  text-decoration: underline;
+}
+
+.contactOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.footerHeadline {
+  margin-bottom: 0;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.emailText {
+  color: #4c6ef5;
 }
 
 p, a {

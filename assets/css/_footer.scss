@@ -1,5 +1,11 @@
+@use "typography" as f;
+
 footer{
     margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    border-top: 1px solid #00000036;
     ul{
         li{
             list-style: none;
@@ -11,3 +17,60 @@ footer{
     }
 }
 
+
+.footerSoMe{
+    display: flex;
+    img:hover{
+        transition: 200ms;
+        scale: (130%);
+    }
+    figure{
+        margin: 0 0 0 5%;
+    }
+    img{
+        width: 30px;
+    }
+}
+
+
+.footerLinks{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 60%;
+        h2{
+            font-size: 25px;
+            font-weight: 200;
+            border-bottom: 1px solid #00000035;
+        }
+        li{
+            margin-top: 10%;
+        }
+
+}
+li:hover{
+    transition: 100ms;
+    scale: (103%);
+}
+
+li:hover > a{
+    text-decoration: underline;
+}
+
+.contactOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.footerHeadline{
+    margin-bottom: 0;
+    font-family: f.$headerFont;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.emailText{
+    color: #4c6ef5;
+}
