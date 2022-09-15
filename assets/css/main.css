@@ -258,6 +258,11 @@
   height: 50px;
 }
 
+.bgButton:hover {
+  transition: 200ms;
+  scale: 103%;
+}
+
 .mainContainer {
   margin-top: 5%;
 }
@@ -315,6 +320,17 @@
   scale: 103%;
 }
 
+footer {
+  margin-top: 10%;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 p, a {
   font-family: "Roboto Condensed", sans;
 }
@@ -325,8 +341,4 @@ h2, h3, h4, h5, h6 {
 
 body {
   margin: 0;
-}
-
-main {
-  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
