@@ -134,7 +134,7 @@
 }
 @-webkit-keyframes slideRight {
   0% {
-    transform: translateX(10%);
+    transform: translateX(-10%);
   }
   100% {
     transform: translateX(0);
@@ -142,7 +142,7 @@
 }
 @keyframes slideRight {
   0% {
-    transform: translateX(10%);
+    transform: translateX(-10%);
   }
   100% {
     transform: translateX(0);
@@ -150,7 +150,7 @@
 }
 @-webkit-keyframes slideLeft {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(10%);
   }
   100% {
     transform: translateX(0);
@@ -158,7 +158,7 @@
 }
 @keyframes slideLeft {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(10%);
   }
   100% {
     transform: translateX(0);
@@ -191,13 +191,26 @@
 }
 
 .slideRight {
-  -webkit-animation: 1s slideRight;
-          animation: 1s slideRight;
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .slideLeft {
-  -webkit-animation: 1s slideLeft;
-          animation: 1s slideLeft;
+  -webkit-animation-name: slideLeft;
+          animation-name: slideLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.animStart {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .bgImageContent {

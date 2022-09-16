@@ -11,7 +11,7 @@
 
   @keyframes slideRight {
     0% {
-      transform: translateX(10%);
+      transform: translateX(-10%);
     }
     100% {
       transform: translateX(0);
@@ -20,7 +20,7 @@
 
   @keyframes slideLeft {
     0% {
-      transform: translateX(-10%);
+      transform: translateX(10%);
     }
     100% {
       transform: translateX(0);
@@ -47,9 +47,16 @@
 
 
 .slideRight{
-  animation: 1s slideRight;
+  animation-name: slideRight;
+  animation-duration: 1s;
+  animation-play-state: paused;
 }
 
 .slideLeft{
-  animation: 1s slideLeft;
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-play-state: paused;
+}
+.animStart{
+  animation-play-state: running;
 }

@@ -2,12 +2,18 @@ const observer = new IntersectionObserver((entries)=>{
 
     entries.forEach((entry) =>{
         if (entry.isIntersecting) {
-            entry.target.classList.toggle('slideRight')
-            entry.target.classList.toggle('slideLeft')
+            entry.target.classList.add('animStart')
             
         } else{
-            entry.target.classList.toggle('slideRight')
-            entry.target.classList.toggle('slideLeft')
+            entry.target.classList.remove('animStart')
+            entry.target.style.animationName = "none";
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    entry.target.style.animationName = ""
+                }, 0);
+            });
+
         }
     });
 
