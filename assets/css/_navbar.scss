@@ -1,5 +1,9 @@
 @use "typography" as f;
 
+a{
+  color: black;
+  text-decoration: none;
+}
 
 .navLogo{
     display: flex;

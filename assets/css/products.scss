@@ -1,0 +1,82 @@
+@use "typography" as f;
+@use "navbar";
+@use "footer";
+
+p, a{
+    font-family: f.$regFont;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: f.$titleFont;
+}
+
+body{
+    margin: 0;
+}
+
+
+.productFlex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+}
+
+.cardDesign{
+    border: 1px solid #00000039;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 3%;
+    width: 300px;
+    height: 475px;
+    box-shadow: 0 5px 10px #6a6a6a66;
+    position: relative;
+    img{
+        max-width: 300px;
+        max-height: 250px;
+        margin: auto;
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #00000039;
+        margin-bottom: 10%;
+    }
+    h4{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    p{
+        font-size: 20px;
+        border-bottom: 1px solid #00000039;
+        width: 30%;
+    }
+    button{
+        padding: 3% 15% 3% 15%;
+        background-color: rgb(28, 184, 65);
+        color: white;
+        position: absolute;
+        bottom: 0.5;
+        font-size: 18px;
+        font-weight: 100;
+    }
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#products{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 200;
+        border-bottom: 1px solid #00000039;
+    }
+}
