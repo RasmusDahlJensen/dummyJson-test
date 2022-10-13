@@ -264,9 +264,41 @@ body {
   justify-content: center;
 }
 
+#products {
+  width: 90%;
+}
 #products h2 {
   text-align: center;
   font-size: 40px;
   font-weight: 200;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2235294118);
+}
+
+.productContainerflex {
+  display: flex;
+}
+
+#sideMenu {
+  margin-top: 4.6%;
+  width: 10%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2235294118);
+}
+#sideMenu h4 {
+  margin: 10%;
+}
+
+.checkboxesContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+.checkboxesContainer input {
+  margin: 0;
+}
+
+.checkboxFlex {
+  display: flex;
+  gap: 10%;
+  margin: 0% 0 5% 0;
 }/*# sourceMappingURL=products.css.map */

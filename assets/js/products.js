@@ -4,7 +4,7 @@ let productContainer = document.getElementById("products");
 
 let renderAllContent = () => {
 	productItems.forEach((product) => {
-		console.log(product);
+		// console.log(product);
 		if (!document.getElementById(`${product.category}`)) {
 			let categoryname = document.createElement("h2");
 			productContainer.appendChild(categoryname);
@@ -20,10 +20,12 @@ let renderAllContent = () => {
         <h3>${product.title}</h3>
         <div class="imgContainer"><img src="${product.thumbnail}"></div>
         <p>${product.price} DKK</p>
-        <button>Læg i kurv</button>
+        <button id="cardButton ${product.id}">Læg i kurv</button>
         </div>
         `;
 	});
 };
-
 renderAllContent();
+
+const button = document.getElementById("cardButton");
+console.log(button);

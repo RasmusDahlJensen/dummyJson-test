@@ -73,10 +73,42 @@ body{
 }
 
 #products{
+    width: 90%;
     h2{
         text-align: center;
         font-size: 40px;
         font-weight: 200;
         border-bottom: 1px solid #00000039;
     }
+}
+
+.productContainerflex{
+    display: flex;
+
+
+}
+
+#sideMenu{
+    margin-top: 4.6%;
+    width: 10%;
+    height: 100%;
+    border: 1px solid #00000039;
+    h4{
+        margin: 10%;
+    }
+}
+
+.checkboxesContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    input{
+        margin: 0;
+    }
+}
+
+.checkboxFlex{
+    display: flex;
+    gap: 10%;
+    margin: 0% 0 5% 0;
 }
