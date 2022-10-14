@@ -20,12 +20,12 @@ let renderAllContent = () => {
         <h3>${product.title}</h3>
         <div class="imgContainer"><img src="${product.thumbnail}"></div>
         <p>${product.price} DKK</p>
-        <button id="cardButton ${product.id}">Læg i kurv</button>
+        <button id="${product.id}" class="cardButton">Læg i kurv</button>
         </div>
         `;
 	});
 };
 renderAllContent();
 
-const button = document.getElementById("cardButton");
-console.log(button);
+const button = document.querySelectorAll("cardButton");
+button.addEventListener("click", () => {});
