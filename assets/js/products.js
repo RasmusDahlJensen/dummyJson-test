@@ -13,7 +13,7 @@ let renderAllContent = () => {
 			productContainer.appendChild(category);
 			category.setAttribute("id", `${product.category}`);
 			category.classList.add("productFlex");
-		}
+		}	
 		document.getElementById(`${product.category}`).innerHTML += `
         <div class="cardDesign">
         <h4>${product.brand}</h4>
