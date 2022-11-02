@@ -251,7 +251,20 @@ let productItems = [
 			"https://www.pricerunner.dk/product/640x640/3004483686/Lenovo-IdeaPad-Gaming-3-15ACH6-82K200N1MX.jpg",
 		],
 	},
-	
+	{
+		id: 17,
+		title: "IdeaPad Gaming 3",
+		brand: "Lenovo",
+		category: "Smartwatches",
+		price: 23000,
+		thumbnail:
+			"https://www.pricerunner.dk/product/640x640/3004483683/Lenovo-IdeaPad-Gaming-3-15ACH6-82K200N1MX.jpg",
+		images: [
+			"https://www.pricerunner.dk/product/640x640/3004483684/Lenovo-IdeaPad-Gaming-3-15ACH6-82K200N1MX.jpg",
+			"https://www.pricerunner.dk/product/640x640/3004483685/Lenovo-IdeaPad-Gaming-3-15ACH6-82K200N1MX.jpg",
+			"https://www.pricerunner.dk/product/640x640/3004483686/Lenovo-IdeaPad-Gaming-3-15ACH6-82K200N1MX.jpg",
+		],
+	},
 ];
 
 export default productItems;
