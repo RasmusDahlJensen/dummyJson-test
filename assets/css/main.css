@@ -61,7 +61,8 @@ a {
   height: 100%;
 }
 
-.dropdown, .dropdownTwo {
+.dropdown,
+.dropdownTwo {
   position: relative;
   display: inline-block;
   border-left: 1px solid black;
@@ -73,7 +74,8 @@ a {
   border-right: 1px solid black;
 }
 
-.dropdown-content, .dropdown-content-two {
+.dropdown-content,
+.dropdown-content-two {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -88,7 +90,8 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.dropdown-content a, .dropdown-content-two a {
+.dropdown-content a,
+.dropdown-content-two a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,10 +103,12 @@ a {
   text-decoration: none;
   color: black;
 }
-.dropdown-content a:hover, .dropdown-content-two a:hover {
+.dropdown-content a:hover,
+.dropdown-content-two a:hover {
   background-color: rgba(0, 0, 0, 0.1450980392);
 }
-.dropdown-content li, .dropdown-content-two li {
+.dropdown-content li,
+.dropdown-content-two li {
   height: 100%;
   width: 100%;
 }
@@ -120,7 +125,8 @@ a {
           animation: 0.5s fadeIn;
 }
 
-.dropdown:hover, .dropdownTwo:hover {
+.dropdown:hover,
+.dropdownTwo:hover {
   background-color: rgba(0, 0, 0, 0.1450980392);
 }
 
@@ -414,11 +420,16 @@ li:hover > a {
   color: #4c6ef5;
 }
 
-p, a {
+p,
+a {
   font-family: "Roboto Condensed", sans;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 

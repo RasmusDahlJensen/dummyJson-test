@@ -1,130 +1,129 @@
 @use "typography" as f;
 
-a{
-  color: black;
-  text-decoration: none;
+a {
+	color: black;
+	text-decoration: none;
 }
 
-.navLogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navLogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.navbar{
-    position: sticky;
-    top: 0;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 0% 5% 0% 2%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    height: 50px;
-    z-index: 1;
+.navbar {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 0% 5% 0% 2%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 50px;
+	z-index: 1;
 
-        h1{
-         margin: 0;
-         font-family: f.$headerFont;
-         font-weight: 100;
-        }
-        nav{
-            ul{
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-                li{
-                    width: 150px;
-                    height: 100%;
-                    list-style: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: f.$regFont;
-                    font-weight: 200;
-                        li:hover{
-                            background-color: #0000005f;
-                        }
+	h1 {
+		margin: 0;
+		font-family: f.$headerFont;
+		font-weight: 100;
+	}
+	nav {
+		ul {
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			li {
+				width: 150px;
+				height: 100%;
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: f.$regFont;
+				font-weight: 200;
+				li:hover {
+					background-color: #0000005f;
+				}
 
-                        a{
-                         display: flex;
-                         justify-content: center;
-                         align-items: center;
-                         font-weight: 200;
-                         text-decoration: none;
-                         color: black;
-                         width: 100%;
-                         height: 100%;
-                        }
-                }
-            }
-        }
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-weight: 200;
+					text-decoration: none;
+					color: black;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
 }
-
 
 //Downdrop
 
-.dropdown, .dropdownTwo {
-    position: relative;
-    display: inline-block;
-    border-left: 1px solid black;
-    height: 100%;
-    width: 100%;
-  }
+.dropdown,
+.dropdownTwo {
+	position: relative;
+	display: inline-block;
+	border-left: 1px solid black;
+	height: 100%;
+	width: 100%;
+}
 
-  .dropdownTwo{
-    border-right: 1px solid black;
-  }
+.dropdownTwo {
+	border-right: 1px solid black;
+}
 
+.dropdown-content,
+.dropdown-content-two {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	left: -1px;
+	border: 1px solid black;
+	border-top: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: f.$regFont;
+		font-size: 20px;
+		border-top: 1px solid black;
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: black;
+	}
+	a:hover {
+		background-color: #00000025;
+	}
+	li {
+		height: 100%;
+		width: 100%;
+	}
+}
 
-  .dropdown-content, .dropdown-content-two {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 150px;
-    height: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    left: -1px;
-    border: 1px solid black;
-    border-top: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-        a{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: f.$regFont;
-            font-size: 20px;
-            border-top: 1px solid black;
-            height: 100%;
-            width: 100%;
-            text-decoration: none;
-            color: black;
-        }
-        a:hover{
-            background-color: #00000025;
-        }
-        li{
-            height: 100%;
-            width: 100%;
-        }
-  }
+.dropdown:hover .dropdown-content {
+	display: flex;
+	animation: 0.5s fadeIn;
+}
+.dropdownTwo:hover .dropdown-content-two {
+	display: flex;
+	animation: 0.5s fadeIn;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: flex;
-    animation: 0.5s fadeIn;
-
-  }
-  .dropdownTwo:hover .dropdown-content-two {
-    display: flex;
-    animation: 0.5s fadeIn;
-
-  }
-
-  .dropdown:hover,.dropdownTwo:hover{
-    background-color: #00000025;
-  }
+.dropdown:hover,
+.dropdownTwo:hover {
+	background-color: #00000025;
+}

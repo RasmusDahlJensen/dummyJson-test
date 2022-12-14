@@ -4,14 +4,19 @@
 @use "mainContent";
 @use "footer";
 
-p, a{
-    font-family: f.$regFont;
+p,
+a {
+	font-family: f.$regFont;
 }
 
-h2,h3,h4,h5,h6{
-    font-family: f.$titleFont;
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: f.$titleFont;
 }
 
-body{
-    margin: 0;
+body {
+	margin: 0;
 }
