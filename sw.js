@@ -63,8 +63,8 @@ self.addEventListener("fetch", (event) => {
 			// If the cache has the requested resource, return it
 			if (cacheRes) {
 				return cacheRes;
-			} else if (event.request.headers.get("accept").includes("text/html")) {
 				// If the request is for an HTML file, return the fallback page
+			} else if (event.request.headers.get("accept").includes("text/html")) {
 				return caches.match("./fallback.html");
 			} else {
 				// Otherwise, fetch the resource and add it to the dynamic cache
