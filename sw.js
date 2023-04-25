@@ -9,6 +9,7 @@ const assets = [
 	"./products.html",
 	"./app.js",
 	"./assets/css/main.css",
+	"./assets/css/products.css",
 	"./manifest.json",
 ];
 
