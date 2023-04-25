@@ -1,10 +1,5 @@
 const staticCacheName = "site-static-v1";
 
-caches.open("my-cache").then(function (cache) {
-	// Cache er åben
-});
-
-// Array med filer
 const assets = [
 	"/index.html",
 	"/fallback.html",
@@ -13,12 +8,21 @@ const assets = [
 	"/manifest.json",
 ];
 
+//Åben og limit cache
+const limitCacheSize = (cacheName, numAllowedFiles) => {
+	caches.open(cacheName).then((cache) => {
+		cache.keys().then((keys) => {
+			if (keys.length > numAllowedFiles) {
+				cache.delete(keys[0]).then(limitCacheSize(cacheName, numAllowedFiles));
+			}
+		});
+	});
+};
+
 // Install Service Worker
 self.addEventListener("install", (event) => {
-	// console.log("Service Worker has been installed");
 	event.waitUntil(
 		caches.open(staticCacheName).then((cache) => {
-			// console.log("Caching all assets", cache);
 			cache.addAll(assets);
 		})
 	);
@@ -29,7 +33,6 @@ self.addEventListener("activate", (event) => {
 	// console.log("Service Worker has been activated");
 });
 
-// Fetch event
 // Fetch event
 self.addEventListener("fetch", (event) => {
 	// Kontroller svar på request
