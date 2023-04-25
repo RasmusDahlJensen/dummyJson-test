@@ -6,6 +6,7 @@ const dynamicCacheName = "site-dynamic-v1";
 const assets = [
 	"./index.html",
 	"./fallback.html",
+	"./products.html",
 	"./app.js",
 	"./assets/css/main.css",
 	"./manifest.json",
